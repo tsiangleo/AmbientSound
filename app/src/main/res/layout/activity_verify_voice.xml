@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bkcolor"
+    tools:context="com.github.tsiangleo.sr.client.activity.VerifyVoiceActivity">
+
+    <ImageView
+        android:background="@drawable/logo"
+        android:layout_margin="10px"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"/>
+
+    <TextView
+        android:id="@+id/hintTextView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="12pt"
+        android:typeface="sans"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:text="环境感知识别系统客户端"/>
+
+
+    <Button
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/view_yuan_button"
+        android:layout_margin="10px"
+        android:id="@+id/startRecordButton"
+        android:textSize="7pt"
+        android:text="开始录音"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/view_yuan_button"
+        android:radius="1px"
+        android:layout_margin="10px"
+        android:id="@+id/stopRecordButton"
+        android:textSize="7pt"
+        android:text="停止录音"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/view_yuan_button"
+        android:radius="1px"
+        android:layout_margin="10px"
+        android:id="@+id/stopRecognitionButton"
+        android:textSize="7pt"
+        android:text="停止识别"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/view_yuan_button"
+        android:radius="1px"
+        android:layout_margin="10px"
+        android:id="@+id/stopConvertButton"
+        android:textSize="7pt"
+        android:text="停止转换"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/view_yuan_button"
+        android:radius="1px"
+        android:layout_margin="10px"
+        android:id="@+id/stopSpectrogramButton"
+        android:textSize="7pt"
+        android:text="停止生成声谱图"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_margin="20px"
+        android:textColor="#030303"
+        android:text=""
+        android:textSize="7pt"
+        android:layout_width="wrap_content"
+        android:layout_height="400px"
+        android:id="@+id/statusTextView" />
+
+    <Chronometer
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:id ="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="400px"
+        android:format="录音中：%s"
+        android:textSize="7pt"
+        android:textColor="#030303"
+        />
+
+    <ImageView
+        android:id="@+id/imageViewSpectrogram"
+        android:layout_margin="10px"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"/>
+</LinearLayout>
